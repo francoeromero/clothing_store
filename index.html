@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katherine's Shop</title>
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estiloIndex.css">
+    <!-- CSS -->
+    <!-- bootstrap (https://icons.getbootstrap.com/) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- fuentes -->
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header rotulo vertical -->
+        <aside>
+            <header>
+                <h1 class="logo">Katherine's Shop</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active">
+                            <i class="bi bi-hand-index-thumb-fill"></i> 
+                            Todos los productos
+                        </button>
+                    </li>
+                    <li>
+                        <button id="abrigos" class="boton-menu boton-categoria">
+                            <i class="bi bi-hand-index-thumb"></i> 
+                            Abrigos
+                        </button>
+                    </li>
+                    <li>
+                        <button id="camisetas" class="boton-menu boton-categoria">
+                            <i class="bi bi-hand-index-thumb"></i>
+                            Remeras
+                        </button>
+                    </li>
+                    <li>
+                        <button id="pantalones" class="boton-menu boton-categoria">
+                            <i class="bi bi-hand-index-thumb"></i> 
+                            Pantalones
+                        </button>
+                    </li>
+                    <li>
+                        <a id="pantalones" class="boton-menu boton-categoria" href="./consultas.html">
+                            <i class="bi bi-chat-right-text"></i>
+                            Consultas
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i>
+                            Mi carrito 
+                            <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <img src="./img/rotulo.png" height="70px" style="margin-right: 20px;" alt="">
+            </footer>
+        </aside>
+        <!-- header rotulo vertical -->
+
+
+        <!-- contenido principal -->
+        <main>
+            <!-- titulo y video -->
+            <div class="contenedor-media">
+                <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+
+                <div class="contenedor-video" >
+                    <video id="video" class="video" autoplay loop>
+                        <source src="./media/video1.mp4?v=1" type="video/mp4">
+                        Tu navegador no es compatible con este video
+                    </video>
+                </div>
+            </div>
+            <!-- titulo y video -->
+
+            <!-- productos-->
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+            <!-- primera fila productos -->
+        </main>
+        <!-- contenido principal -->
+    </div>
+
+    <!-- Javascript -->
+    <script src="./scripts/index.js"></script>
+</body>
